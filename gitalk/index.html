@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言板</title>
+<style type="text/css">
+.newStyle1 {
+	font-size: xx-large;
+	font-family: "Microsoft YaHei UI";
+}
+.style1 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body style="background-color: #EEEEEE">
+
+<p class="style1"><span class="newStyle1">留言板</span></p>
+
+</body>
+<link rel="stylesheet" href="./gitalk.css">
+<script src="./gitalk.min.js"></script> 
+
+<div id="gitalk-container"></div>     
+<script type="text/javascript">
+    var gitalk = new Gitalk({      clientID: `97dbda94c8716024e8c8`,
+      clientSecret: `168fb30f67c248a0137159920674053d94a76755`,
+      repo: `yidaozhanya.github.io`,
+     owner: 'YidaozhanYa',
+     admin: ['YidaozhanYa'],
+      id: 'window.location.pathname',
+        });
+      gitalk.render('gitalk-container');
+</script> 
+</html>
