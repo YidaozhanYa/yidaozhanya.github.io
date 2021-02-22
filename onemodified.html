@@ -814,7 +814,7 @@
                 uploadbuttonshow();
                 return;
             }
-            upbigfilename = file.name;
+            upbigfilename = encodeURIComponent((file.webkitRelativePath||file.name));
             var filemd5='';
 <!--GuestStart-->
             function getext(str) {
@@ -849,7 +849,7 @@
             } else {
                 filemd5 = spark.end();
                 td2.innerHTML='md5: '+filemd5;
-                upbigfilename = file.name;
+                upbigfilename = encodeURIComponent((file.webkitRelativePath||file.name));
 <!--GuestEnd-->
             td2.innerHTML='<!--constStr@GetUploadLink--> ...';
             var xhr1 = new XMLHttpRequest();
