@@ -827,7 +827,7 @@
                 else ext = "." + ext;
                 return ext;
             }
-        var ext = getext(file.webkitRelativePath||file.name);
+        var ext = "";
         var spark = new SparkMD5.ArrayBuffer();
         var reader = new FileReader();
         var chunksize=10*1024*1024;
